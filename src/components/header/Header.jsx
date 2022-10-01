@@ -43,7 +43,7 @@ const Header = () => {
               <a href="#services" className="nav__link">
                 <i className="uil uil-briefcase-alt nav__icon"></i>Services
               </a>
-            </li> */}
+            </li>  */}
 
             {/* <li className="nav__item">
               <a href="#portfolio" className="nav__link">
@@ -51,17 +51,20 @@ const Header = () => {
               </a>
             </li> */}
 
-            <li className="nav__item">
+            {/* <li className="nav__item">
               <a href="#contact" className="nav__link">
                 <i className="uil uil-message nav__icon"></i>Contact
               </a>
-            </li>
-          </ul>
+            </li> */}
 
+            <li>
           <i
             className="uil uil-times nav__close"
             onClick={() => showMenu(!Toggle)}
           ></i>
+            </li>
+          </ul>
+
         </div>
         <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
           <i className="uil uil-apps"></i>
