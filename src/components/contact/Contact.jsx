@@ -4,20 +4,20 @@ import "./Contact.css";
 
 
 function Contact() {
-    const form = useRef();
+  const form = useRef();
 
-    const sendEmail = (e) => {
-      e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-      emailjs
-        .sendForm(
-          "service_2ztn1f9",
-          "template_ptvcal2",
-          form.current,
-          "tTSlrEMMQd6rL7SVk"
-        )
-        e.target.reset()
-    };
+    emailjs
+      .sendForm(
+        "service_2ztn1f9",
+        "template_ptvcal2",
+        form.current,
+        "tTSlrEMMQd6rL7SVk"
+      )
+    e.target.reset()
+  };
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Get in touch</h2>
@@ -25,24 +25,21 @@ function Contact() {
 
       <div className="contact__container container grid">
         <div className="contact__content">
-          {/* <h3 className="contact__title">Lets talk</h3> */}
-          {/* <div className="contact__info">Info</div> */}
           <div className="contact__card">
             <i className="bx bx-mail-send contact__card-icon"></i>
             <h3 className="contact__card-title">Mail</h3>
             <span className="contact__card-data">miguel.owd@gmail.com</span>
-            <a href="mailto:miguel.owd@gmail.com" className="contact__button">
+            <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=miguel.owd@gmail.com" className="contact__button" >
               contact{" "}
               <i className="bx bx-right-arrow-alt contact__button-icon"></i>
             </a>
           </div>
-          {/* second card */}
           <div className="contact__card">
             <i className="bx bxl-whatsapp contact__card-icon"></i>
             <h3 className="contact__card-title">Phone</h3>
             <span className="contact__card-data">+34 610910823</span>
-            <a
-              href="https://api.whatsapp.com/send?phone=610910823&text=Hola!"
+            <a target="_blank"
+              href="https://api.whatsapp.com/send?phone=34610910823&text=Hola!"
               className="contact__button"
             >
               contact{" "}

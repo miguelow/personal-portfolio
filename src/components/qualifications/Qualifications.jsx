@@ -80,7 +80,7 @@ function Qualifications() {
                   Computer Engineering
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i>2019 - 2021
+                  <i className="uil uil-calendar-alt"></i>2019 - 2021 Dropped out after second year
                 </div>
               </div>
             </div>
