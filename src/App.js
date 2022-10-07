@@ -7,6 +7,7 @@ import Qualifications from "./components/qualifications/Qualifications.jsx";
 import Contact from "./components/contact/Contact.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Scroll from "./components/scroll/ScrollToTop.jsx";
+// import Cursor from './components/cursor/Cursor';
 
 
 
@@ -19,7 +20,7 @@ function App() {
   return (
     <>
       <Header />
-
+      {/* <Cursor/> */}
       <main className='main'>
         <Home />
         <About />

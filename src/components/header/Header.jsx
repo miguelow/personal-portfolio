@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
-
+import { motion } from 'framer-motion'
 const Header = () => {
   // Toggle menu
   const [Toggle, showMenu] = useState(false);
@@ -12,7 +12,7 @@ const Header = () => {
   });
 
   return (
-    <header className="header">
+    <motion.header className="header" initial={{opacity: 0, y: -180}} animate={{opacity: 1, y: 0}} transition={{ease: "easeInOut", duration:1,delay:0.4}}>
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
           Miguel
@@ -70,7 +70,7 @@ const Header = () => {
           <i className="uil uil-apps"></i>
         </div>
       </nav>
-    </header>
+    </motion.header>
   );
 };
 

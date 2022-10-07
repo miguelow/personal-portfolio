@@ -22,7 +22,7 @@
 }
 
 .qualification__button:hover{
-    color: var(--title-color-dark);
+    /* color: var(--title-color-dark); */
 }
 
 .qualification__icon{
@@ -32,6 +32,10 @@
 
 .qualification__active{
     color: var(--title-color-dark);
+    background-color: var(--text-color);
+    color: white;
+    border-color: white;
+    border: 2px solid gray;
 }
 
 .qualification__sections{

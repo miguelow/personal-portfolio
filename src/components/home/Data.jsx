@@ -62,7 +62,7 @@ function Data() {
         <a className='home__company' href="https://www.talenthackers.net/" target="_blank">Talenthackers</a>.{" "}
       </p>
       <a href="#contact" className="button button--flex">
-        Say hello{" "}
+        Let's work together
         <svg
           class="button__icon"
           xmlns="http://www.w3.org/2000/svg"
