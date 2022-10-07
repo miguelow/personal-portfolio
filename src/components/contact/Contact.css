@@ -110,6 +110,11 @@
   resize: none;
 }
 
+.contact__form-success{
+  margin-top: 1rem;
+  color: #58ba58;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {

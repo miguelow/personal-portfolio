@@ -1,22 +1,59 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
 
 function Contact() {
+
+  const initialValues = {name: "", email: "", message: ""}
+
+  const [formValues, setFormValues] = useState(initialValues)
+  const [formErrors, setformErrors] = useState({})
+  const [isSubmit, setIsSubmit] = useState(false)
+
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const handleChange = (e) => {
+    const{ name, value } = e.target
+    setFormValues({...formValues, [name]: value})
+  }
+
+  useEffect(()=>{
+    if(Object.keys(formErrors).length === 0 && isSubmit){
+      console.log(formValues)
+    }
+  },[formErrors]) 
+
+  const validate = (values) =>{
+    const errors = {}
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if(!values.name){
+      errors.name = "Name is required"
+    }
+    if(!values.email){
+      errors.email = "Email is required"
+    }
+    if(!values.message){
+      errors.message = "Message is required"
+    }
+    return errors
+  }
+
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_2ztn1f9",
-        "template_ptvcal2",
-        form.current,
-        "tTSlrEMMQd6rL7SVk"
-      )
-    e.target.reset()
+    setformErrors(validate(formValues))
+    setIsSubmit(true)
+if(formErrors.name !== 'Name is required' && formErrors.email !== 'Email is required' && formErrors.message !== 'Message is required'){
+  emailjs
+    .sendForm(
+      "service_2ztn1f9",
+      "template_ptvcal2", 
+      form.current,
+      "tTSlrEMMQd6rL7SVk"
+    )
+  e.target.reset()
+}
   };
   return (
     <section className="contact section" id="contact">
@@ -49,13 +86,11 @@ function Contact() {
         </div>
 
         <div className="contact__content">
-          {/* <h3 className="contact__title">About</h3> */}
-
           <form
             action=""
             className="contact__form"
             ref={form}
-            onSubmit={sendEmail}
+            onSubmit={handleSubmit}
           >
             <div className="contact__form-div">
               <label className="contact__form-tag">Name</label>
@@ -63,7 +98,9 @@ function Contact() {
                 type="text"
                 name="name"
                 className="contact__form-input"
-                placeholder="Insert your name"
+                placeholder={formErrors.name?formErrors.name : 'Insert your name'}
+                value={formValues.name}
+                onChange={handleChange}
               />
             </div>
             <div className="contact__form-div">
@@ -72,7 +109,9 @@ function Contact() {
                 type="email"
                 name="email"
                 className="contact__form-input"
-                placeholder="Insert your email"
+                placeholder={formErrors.email?formErrors.email : 'Insert your email'}
+                value={formValues.email}
+                onChange={handleChange}
               />
             </div>
             <div className="contact__form-div contact__form-area">
@@ -83,10 +122,11 @@ function Contact() {
                 cols="30"
                 rows="10"
                 className="contact__form-input"
-                placeholder="Here goes the message"
+                placeholder={formErrors.message?formErrors.message : 'Insert your message'}
+                value={formValues.message}
+                onChange={handleChange}
               ></textarea>
             </div>
-
             <button href="#contact" className="button button--flex">
               Send message
               <svg
@@ -107,6 +147,7 @@ function Contact() {
                 ></path>
               </svg>
             </button>
+            {(Object.keys(formErrors).length === 0 && isSubmit) ? (<div className="contact__form-success">Message sent :)</div>) : ''}
           </form>
         </div>
       </div>
