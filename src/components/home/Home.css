@@ -25,6 +25,15 @@
   color: var(--title-color);
 }
 
+.home__company::after {
+  content: "";
+  display: block;
+  width: 65px;
+  border-bottom: 2px solid var(--accent-color);
+  margin-left: 25%;
+}
+
+
 .home__social-icon:hover {
   color: var(--title-color-dark);
 }
@@ -32,6 +41,19 @@
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-0-25);
+  position: relative;
+}
+
+.home__title::before{
+    content: "";
+    position: absolute;
+    left: 13%;
+    bottom: 2px;
+    width: 180px;
+    height: 40px;
+    transform: skew(-12deg) translateX(-50%);
+    background: var(--accent-color);
+    z-index: -1;
 }
 
 .home__hand {

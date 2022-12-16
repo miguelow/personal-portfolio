@@ -44,7 +44,7 @@ function Contact() {
 
     setformErrors(validate(formValues))
     setIsSubmit(true)
-if(formErrors.name !== 'Name is required' && formErrors.email !== 'Email is required' && formErrors.message !== 'Message is required'){
+if(formErrors.name !== 'Name is required' && formErrors.email !== 'Email is required' && formErrors.message !== 'Message is required' && formErrors.message.length && formErrors.name.length && formErrors.email.length){
   emailjs
     .sendForm(
       "service_2ztn1f9",
@@ -57,6 +57,13 @@ if(formErrors.name !== 'Name is required' && formErrors.email !== 'Email is requ
   };
   return (
     <section className="contact section" id="contact">
+
+<div class="shape-blob"></div>
+<div class="shape-blob"></div>
+        <div class="blob-c">
+	      <div class="shape-blob one"></div>
+        <div class="shape-blob four"></div>
+	      </div>
       <h2 className="section__title">Get in touch</h2>
       <span className="section__subtitle">Lets talk!</span>
 
@@ -66,7 +73,11 @@ if(formErrors.name !== 'Name is required' && formErrors.email !== 'Email is requ
             <i className="bx bx-mail-send contact__card-icon"></i>
             <h3 className="contact__card-title">Mail</h3>
             <span className="contact__card-data">miguel.owd@gmail.com</span>
-            <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=miguel.owd@gmail.com" className="contact__button" >
+            <a 
+              target="_blank" 
+              rel="noreferrer" 
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=miguel.owd@gmail.com" 
+              className="contact__button" >
               contact{" "}
               <i className="bx bx-right-arrow-alt contact__button-icon"></i>
             </a>
@@ -76,6 +87,7 @@ if(formErrors.name !== 'Name is required' && formErrors.email !== 'Email is requ
             <h3 className="contact__card-title">Phone</h3>
             <span className="contact__card-data">+34 610910823</span>
             <a target="_blank"
+              rel="noreferrer"
               href="https://api.whatsapp.com/send?phone=34610910823&text=Hola!"
               className="contact__button"
             >

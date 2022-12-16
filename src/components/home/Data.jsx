@@ -59,7 +59,7 @@ function Data() {
       <p className="home__description">
         {" "}
         Junior developer based in Madrid, currently working at{" "}
-        <a className='home__company' href="https://www.verisure.com/" target="_blank">Verisure</a>.{" "}
+        <a className='home__company' href="https://www.verisure.com/" target="_blank">Verisure</a>{" "}
       </p>
       <a href="#contact" className="button button--flex">
         Let's work together

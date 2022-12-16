@@ -12,9 +12,9 @@ function Home() {
       <div className="home__container container grid">
         <div className="home__content grid">
                   <Socials />
-                  <div className="home__img">
+                  {/* <div className="home__img"> */}
                       
-                  </div>
+                  {/* </div> */}
                   <Data/>
               </div>
               <ScrollDown/>
