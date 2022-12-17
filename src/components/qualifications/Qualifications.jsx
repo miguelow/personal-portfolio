@@ -138,7 +138,6 @@ function Qualifications() {
         </div>
         <div class="shape-blob"></div>
         <div class="shape-blob one"></div>
-        <div class="shape-blob two"></div>
     </section>
     
     

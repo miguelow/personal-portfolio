@@ -26,7 +26,6 @@ function Contact() {
 
   const validate = (values) =>{
     const errors = {}
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     if(!values.name){
       errors.name = "Name is required"
     }
@@ -58,11 +57,11 @@ if(formErrors.name !== 'Name is required' && formErrors.email !== 'Email is requ
   return (
     <section className="contact section" id="contact">
 
-<div class="shape-blob"></div>
-<div class="shape-blob"></div>
+        <div class="shape-blob"></div>
+        <div class="shape-blob"></div>
         <div class="blob-c">
-	      <div class="shape-blob one"></div>
-        <div class="shape-blob four"></div>
+          <div class="shape-blob one"></div>
+          <div class="shape-blob four"></div>
 	      </div>
       <h2 className="section__title">Get in touch</h2>
       <span className="section__subtitle">Lets talk!</span>

@@ -8,7 +8,7 @@
     width: 350px;
     border-radius: 1.5rem;
     justify-self: center;
-    height: 350px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -44,6 +44,7 @@
 .about__description{
     padding: 0 4rem 0 0;
     margin-bottom: var(--mb-2-5);
+    line-height: 30px;
 }
 
 /*=============== BREAKPOINTS ===============*/

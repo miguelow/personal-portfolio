@@ -50,6 +50,7 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+
 }
 
 /* Responsive typography */
@@ -241,9 +242,9 @@ img {
   	animation: 
 		transform 18s ease-in-out infinite both alternate,
 		movement_one 12s ease-in-out infinite both;
-	opacity:.7;
+	/* opacity:.7; */
 	position: absolute;
-	left: 75%;
+	/* left: 75%; */
 	top: 40%;
   z-index: -1;
 }
@@ -275,8 +276,7 @@ img {
 	background:var(--accent-color);
 	height: 100px;
 	width: 80px;
-	left: 350px;
-	top: 60px;
+	top: 130px;
 	transform: rotate(-180deg);
 	animation: transform 17s ease-in-out infinite both alternate, movement_two 13s ease-in-out infinite both;
   z-index: -1;

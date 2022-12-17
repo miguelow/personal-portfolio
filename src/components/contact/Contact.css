@@ -89,17 +89,17 @@
   outline: none;
   border-radius: 0.75rem;
   padding: 1.5rem;
-  z-index: 1;
+  z-index: -1;
 }
 
 .contact__form-tag {
-  position: absolute;
-  top: -0.75rem;
-  left: 1.25rem;
-  font-size: var(--smaller-font-size);
-  padding: 0.25rem;
-  background-color: var(--body-color);
-  z-index: 10;
+    background-color: var(--body-color);
+    font-size: var(--smaller-font-size);
+    left: 1.25rem;
+    padding: 0.25rem;
+    position: absolute;
+    top: -0.75rem;
+    z-index: 10;
 }
 
 .contact__form-area {

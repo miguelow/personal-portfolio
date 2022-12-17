@@ -3,7 +3,7 @@
 }
 
 .home__content {
-  grid-template-columns: 116px repeat(2, 1fr);
+  grid-template-columns: 116px repeat(1, 1fr);
   padding-top: 5.5rem;
   column-gap: 2rem;
   align-items: center;
@@ -18,6 +18,7 @@
 .home__social-icon {
   font-size: 1.25rem;
   color: var(--title-color);
+  margin-right: 1.5rem;
 }
 
 .home__company{
@@ -145,7 +146,7 @@
 /* For large devices */
 @media screen and (max-width: 992px) {
   .home__content {
-    grid-template-columns: 100px repeat(2, 1fr);
+    grid-template-columns: 100px repeat(1, 1fr);
     column-gap: 1.25rem;
   }
 
@@ -184,7 +185,7 @@
 /* For medium devices */
 @media screen and (max-width: 768px) {
   .home__content {
-    grid-template-columns: 0.5fr 3fr;
+    /* grid-template-columns: 0.5fr 3fr; */
     padding-top: 3.5rem;
   }
 
@@ -204,7 +205,11 @@
   }
 
   .home__scroll {
-cursor: auto;
+    cursor: auto;
+    display: none;
+  }
+
+  .home__social {
     display: none;
   }
 }
