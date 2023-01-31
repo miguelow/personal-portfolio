@@ -58,8 +58,8 @@ function Data() {
       <h3 className="home__subtitle">Frontend Developer</h3>
       <p className="home__description">
         {" "}
-        Junior developer based in Madrid, currently working at{" "}
-        <a className='home__company' href="https://www.verisure.com/" target="_blank">Verisure</a>{" "}
+        Fullstack developer based in Madrid, currently working at
+        <a className='home__company' href="https://www.cofares.es/" target="_blank"> Cofares</a>{" "}
       </p>
       <a href="#contact" className="button button--flex">
         Let's work together

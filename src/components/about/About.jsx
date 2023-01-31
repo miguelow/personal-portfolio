@@ -16,13 +16,12 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-            I am a Junior developer with a background in Computer Engineering studies
-            and a love for cooking! I really enjoy learning new things and
-            meeting new people, so don't hesitate to reach out.
+            I am a frontend Developer who really enjoys the outdoors 
+            and cooking! 
           </p>
 
           <a download="" href={CV} className="button button--flex">
-            Download CV
+            Download CV (Last updated Jan 31st 2023)
             <svg
               class="button__icon"
               xmlns="http://www.w3.org/2000/svg"

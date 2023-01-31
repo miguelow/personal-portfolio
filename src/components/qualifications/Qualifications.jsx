@@ -47,6 +47,24 @@ function Qualifications() {
                 : "qualification__content "
             }
           >
+            <div className="qualification__data">
+              <div></div>
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+              <div>
+                <h3 className="qualification__title">
+                  Masters in Digital Business
+                </h3>
+                <span className="qualification__subtitle">
+                  Escuela de Organización Industrial
+                </span>
+                <div className="qualification__calendar">
+                  <i className="uil uil-calendar-alt"></i>2023
+                </div>
+              </div>
+            </div>
             {/* -------------------------------- */}
             <div className="qualification__data">
               <div>
@@ -99,12 +117,12 @@ function Qualifications() {
             
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Frontend Developer</h3>
+                <h3 className="qualification__title">Junior Fullstack Developer</h3>
                 <span className="qualification__subtitle">
-                  Verisure
+                  Cofares
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i>Sep 2022 - Currently
+                  <i className="uil uil-calendar-alt"></i>Dec 2022 - Currently
                 </div>
               </div>
 
@@ -123,13 +141,32 @@ function Qualifications() {
               </div>
               <div>
                 <h3 className="qualification__title">
+                Frontend Developer
+                </h3>
+                <span className="qualification__subtitle">
+                  Talenthackers
+                </span>
+                <div className="qualification__calendar">
+                  <i className="uil uil-calendar-alt"></i>May 2022 - Dec 2022
+                </div>
+              </div>
+            </div>
+            <div className="qualification__data">
+              <div></div>
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+                <span className="qualification__rounder"></span>
+              </div>
+              <div>
+                <h3 className="qualification__title">
                 Jr Frontend Developer
                 </h3>
                 <span className="qualification__subtitle">
                   Talenthackers
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i>Jan 2022 - Sep 2022
+                  <i className="uil uil-calendar-alt"></i>Jan 2022 - May 2022
                 </div>
               </div>
             </div>
