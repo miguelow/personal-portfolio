@@ -7,7 +7,6 @@ import Backend from "./Backend";
 function Skills() {
     return (
       <section className="skills section" id="skills">
-        <div class="shape-blob"></div>
         <div class="blob-c">
 	      <div class="shape-blob"></div>      
         <div class="shape-blob six"></div>

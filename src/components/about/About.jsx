@@ -16,11 +16,11 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-            I am currently my studies at EOI through a Digital Business Masters as well as working full time. On my free time I enjoy the outdoors as well as cooking
+            I am currently continuing  my studies at EOI through a Digital Business Masters as well as working full time. On my free time I enjoy the outdoors as well as cooking
           </p>
 
           <a download="" href={CV} className="button button--flex">
-            Download CV (Last updated Jan 31st 2023)
+            Download CV
             <svg
               class="button__icon"
               xmlns="http://www.w3.org/2000/svg"

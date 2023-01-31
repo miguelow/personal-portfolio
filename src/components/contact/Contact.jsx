@@ -58,8 +58,6 @@ if(formErrors.name !== 'Name is required' && formErrors.email !== 'Email is requ
  return (
    <section className="contact section" id="contact">
  
-<div class="shape-blob"></div>
-<div class="shape-blob"></div>
        <div class="blob-c">
        <div class="shape-blob one"></div>
        <div class="shape-blob four"></div>
