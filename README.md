@@ -1,4 +1,4 @@
-Description:
+## Description:
 
 My personal portfolio updated on the 31st of January 2023, built with React, emailjs, framer-motion and deployed on Vercel
 
