@@ -16,8 +16,7 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-            I am a frontend Developer who really enjoys the outdoors 
-            and cooking! 
+            I am currently my studies at EOI through a Digital Business Masters as well as working full time. On my free time I enjoy the outdoors as well as cooking
           </p>
 
           <a download="" href={CV} className="button button--flex">
