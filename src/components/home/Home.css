@@ -54,7 +54,7 @@
     height: 40px;
     transform: skew(-12deg) translateX(-50%);
     background: var(--accent-color);
-    z-index: 1;
+    z-index: -1;
 }
 
 .home__hand {
