@@ -11,7 +11,7 @@ function Socials() {
         className="home__social-icon"
         target="_blank"
       >
-        <i class="uil uil-linkedin"></i>
+        <i className="uil uil-linkedin"></i>
       </a>
       <a
         rel="noreferrer"
@@ -19,7 +19,7 @@ function Socials() {
         className="home__social-icon"
         target="_blank"
       >
-        <i class="uil uil-github"></i>
+        <i className="uil uil-github"></i>
       </a>
     </div>
   );

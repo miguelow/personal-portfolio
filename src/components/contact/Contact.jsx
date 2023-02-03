@@ -58,9 +58,9 @@ if(formErrors.name !== 'Name is required' && formErrors.email !== 'Email is requ
  return (
    <section className="contact section" id="contact">
  
-       <div class="blob-c">
-       <div class="shape-blob one"></div>
-       <div class="shape-blob four"></div>
+       <div className="blob-c">
+       <div className="shape-blob one"></div>
+       <div className="shape-blob four"></div>
        </div>
      <h2 className="section__title">Get in touch</h2>
      <span className="section__subtitle">Lets talk!</span>
@@ -140,7 +140,7 @@ if(formErrors.name !== 'Name is required' && formErrors.email !== 'Email is requ
            <button href="#contact" className="button button--flex">
              Send message
              <svg
-               class="button__icon"
+               className="button__icon"
                xmlns="http://www.w3.org/2000/svg"
                width="24"
                height="24"
