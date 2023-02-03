@@ -3,12 +3,19 @@ import "./About.css";
 import AboutImg from "../../assets/profile.jpeg";
 import CV from "../../assets/MOW-english-CV.pdf";
 import Info from "./Info.jsx"
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+
 
 const About = () => {
   return (
     <section className="about section" id="about">
       <h2 className="section__title">About me</h2>
-      <span className="section__subtitle">My introduction</span>
+      <span className="section__subtitle">
+      <RoughNotation type="highlight" animationDelay={4000}iterations={1} show={true} color="#ee6f5780"  animationDuration={1000} >
+        My introduction
+      </RoughNotation>
+        
+      </span>
 
       <div className="about__container container grid">
         <img src={AboutImg} alt="" className="about__img" />
@@ -16,7 +23,9 @@ const About = () => {
           <Info />
 
           <p className="about__description">
+          <RoughNotation type="box" show={true} color="#ee6f5780" padding={10} >
             I am currently continuing  my studies at EOI through a Digital Business Masters as well as working full time. On my free time I enjoy the outdoors as well as cooking
+          </RoughNotation>
           </p>
 
           <a download="" href={CV} className="button button--flex">

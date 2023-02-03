@@ -84,7 +84,8 @@
 
 .home__description {
   max-width: 400px;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
+  margin-top: 60px;
 }
 
 .home__img {
@@ -168,6 +169,7 @@
   .home__description {
     max-width: initial;
     margin-bottom: var(--mb-2-5);
+    margin-top: 24px;
   }
 
   .home__img {
