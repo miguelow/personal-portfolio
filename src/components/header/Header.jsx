@@ -13,7 +13,7 @@ const Header = () => {
   });
 
   return (
-    <motion.header className="header" initial={{opacity: 0, y: -180}} animate={{opacity: 1, y: 0}} transition={{ease: "easeInOut", duration:1,delay:0.4}}>
+    <header className="header">
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
           Miguel
@@ -71,7 +71,7 @@ const Header = () => {
           <i className="uil uil-apps"></i>
         </div>
       </nav>
-    </motion.header>
+    </header>
   );
 };
 
