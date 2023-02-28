@@ -12,11 +12,9 @@ function Data() {
       </RoughNotation>
 
       <h3 className="home__subtitle">Junior Developer</h3>
-      <p className="home__description">
-        <RoughNotation type="circle" show={true} color="#ee6f5780" padding={[20,40]} animationDuration={2000} >
+      <span className="home__description">
           Junior Fullstack developer based in Madrid, currently working at Cofares
-        </RoughNotation>
-      </p>
+      </span>
       <a href="#contact" className="button button--flex ">
         Contact me
         <svg

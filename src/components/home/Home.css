@@ -88,6 +88,29 @@
   margin-top: 60px;
 }
 
+.home__description {
+  display: inline-block;
+  position: relative;
+}
+
+.home__description::after {
+  content: '';
+  position: absolute;
+  width: 90%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 2;
+  left: 0;
+  background-color: var(--accent-color);
+  transform-origin: bottom right;
+  transition: transform 0.45s ease-out;
+}
+
+.home__description:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .home__img {
   background: url("../../assets/profile.jpeg");
   background-repeat: no-repeat;
