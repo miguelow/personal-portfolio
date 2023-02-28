@@ -5,37 +5,23 @@ import {motion} from 'framer-motion'
 
 function Cursor() {
 
-    const [mousePosition, setMousePosition] = useState({
-        x:0,
-        y:0
-    })
+    const blob = document.getElementById("blob");
 
-    const [cursorVariant, setCursorVariant] = useState("default")
-
-    useEffect(()=>{
-        const mouseMove = e =>{
-            setMousePosition({
-                x: e.clientX,
-                y: e.clientY
-            })
-        }
-        window.addEventListener("mousemove", mouseMove)
-
-        return () =>{
-            window.removeEventListener("mousemove", mouseMove)
-        }
-    })
-
-    const variants ={
-        default: {
-            x: mousePosition.x -16,
-            y: mousePosition.y -16
-        }
-    }
+window.onpointermove = event => { 
+  const { clientX, clientY } = event;
+  
+  blob.animate({
+    left: `${clientX}px`,
+    top: `${clientY}px`
+  }, { duration: 3000, fill: "forwards" });
+}
 
 
   return (
-    <motion.div className='cursor' variants={variants} animate={cursorVariant}></motion.div>
+    <div>
+        <div id="blob"></div>
+        <div id="blur"></div>
+    </div>
   )
 }
 

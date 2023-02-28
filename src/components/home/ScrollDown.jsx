@@ -3,7 +3,7 @@ import React from "react";
 function ScrollDown() {
   return (
     <div className="home__scroll">
-      <a href="" className="home__scroll-button button--flex" target="_blank">
+      <div href="" className="home__scroll-button button--flex" >
         <svg
           width="32px"
           height="32px"
@@ -43,7 +43,7 @@ function ScrollDown() {
                   Scroll Down
               </span>
               <i className="uil uil-arrow-down home__scroll-arrow"></i>
-      </a>
+      </div>
     </div>
   );
 }
