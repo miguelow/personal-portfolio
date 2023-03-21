@@ -17,8 +17,8 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="#qualifications" className="footer__link">
-              Qualifications
+            <a href="#experience" className="footer__link">
+              Experience
             </a>
           </li>
         </ul>

@@ -8,8 +8,8 @@ function Qualifications() {
     setToggleState(index)
   }
   return (
-    <section className="qualifications section" id="qualifications">
-      <h2 className="section__title">Qualifications</h2>
+    <section className="qualifications section" id="experience">
+      <h2 className="section__title">Experience</h2>
       <span className="section__subtitle"></span>
 
       <div className="qualification__container container">
