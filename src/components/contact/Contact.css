@@ -151,9 +151,14 @@
  }
   
  @media screen and (max-width: 576px) {
+
+  .contact__container {
+    row-gap: 0.5rem;
+  }
   .contact__content {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
   }
   
   .contact__info {
@@ -163,13 +168,18 @@
   .contact__form {
     width: 100%;
   }
+
  }
   
  /* For small devices */
  @media screen and (max-width: 350px) {
+  .contact__container {
+    row-gap: 0.5rem;
+  }
   .contact__content {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
   }
   
  }
