@@ -10,7 +10,7 @@ function Qualifications() {
   return (
     <section className="qualifications section" id="qualifications">
       <h2 className="section__title">Qualifications</h2>
-      <span className="section__subtitle">My personal journey</span>
+      <span className="section__subtitle"></span>
 
       <div className="qualification__container container">
         <div className="qualification__tabs">

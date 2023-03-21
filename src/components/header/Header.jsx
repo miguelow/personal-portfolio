@@ -30,7 +30,6 @@ const Header = () => {
               {headerItems.map((item) => (
                 <li className="nav__item">
                   <a href={item.href} className="nav__link">
-                    <i className="uil uil-estate nav__icon"></i>
                       {item.name}
                   </a>
                 </li>
