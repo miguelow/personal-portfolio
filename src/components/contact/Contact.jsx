@@ -23,7 +23,7 @@ function Contact() {
              rel="noreferrer"
              href="https://mail.google.com/mail/?view=cm&fs=1&to=miguel.owd@gmail.com"
              className="contact__button" >
-             contact{" "}
+             contact
              <i className="bx bx-right-arrow-alt contact__button-icon"></i>
            </a>
          </div>

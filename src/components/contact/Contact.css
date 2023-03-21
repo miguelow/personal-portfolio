@@ -130,10 +130,7 @@
   
  /* For medium devices */
  @media screen and (max-width: 768px) {
-  .contact__container {
-    grid-template-columns: 1fr;
-    row-gap: 3rem;
-  }
+
   
   .contact__info {
     justify-content: center;
@@ -153,6 +150,7 @@
  @media screen and (max-width: 576px) {
 
   .contact__container {
+    grid-template-columns: 1fr;
     row-gap: 0.5rem;
   }
   .contact__content {
@@ -175,6 +173,8 @@
  @media screen and (max-width: 350px) {
   .contact__container {
     row-gap: 0.5rem;
+    grid-template-columns: 1fr;
+
   }
   .contact__content {
     display: flex;
