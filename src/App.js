@@ -19,7 +19,6 @@ function App() {
   return (
     <>
       <Header />
-      {/* <Cursor/> */}
       <main className='main'>
         <Home />
         <About />
