@@ -75,6 +75,7 @@
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
     transform: 0.3s;
+    backdrop-filter: blur(80px);
   }
 
   
@@ -84,7 +85,7 @@
 
   .nav__list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 2rem;
   }
 

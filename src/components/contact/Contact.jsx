@@ -1,17 +1,19 @@
-import React, { useRef, useState, useEffect } from "react";
-import emailjs from "@emailjs/browser";
+import React from "react";
 import "./Contact.css";
- 
+import {motion} from 'framer-motion'
+
  
 function Contact() {
  return (
    <section className="contact section" id="contact">
      
  
-     <div className="contact__container container grid">
+     <motion.div 
+      className="contact__container container grid"
+      whileHover={{ scale: 1.1 }}
+      >
       <div>
       <h2 className="section__title">Get in touch</h2>
-     <span className="section__subtitle">Lets talk!</span>
       </div>
        <div className="contact__content">
          <div className="contact__card">
@@ -29,7 +31,7 @@ function Contact() {
          </div>
          
        </div>
-     </div>
+     </motion.div>
    </section>
  );
 }
