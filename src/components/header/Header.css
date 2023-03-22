@@ -103,7 +103,7 @@
 
   .nav__close{
     position: absolute;
-    top: 1rem;
+    top: 25px;
   }
 
   .nav__close:hover {
@@ -124,7 +124,7 @@
 
 @media screen and (max-width: 350px) {
   .nav__menu {
-    padding: 2rem 0.25rem 4rem;
+    padding: 2rem 0.25rem 2rem;
   }
 
   .nav__list {

@@ -111,15 +111,11 @@
     padding: 1rem 0;
     width: 80%;
   }
-  
-  /* .contact__content {
-    display: flex;
-    justify-content: space-around;
-  } */
-
   .contact__card {
-   
     margin-bottom: 0px;
+   }
+   .skills__container {
+    grid-template-columns: repeat(2, 300px);
    }
  }
   
@@ -140,6 +136,10 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .skills__container {
+    grid-template-columns: repeat(1, 60%);
+   }
  }
   
  @media screen and (max-width: 576px) {
@@ -163,6 +163,10 @@
     width: 100%;
   }
 
+  .skills__container {
+    grid-template-columns: repeat(1, 80%);
+   }
+
  }
   
  /* For small devices */
@@ -179,6 +183,10 @@
     align-items: center;
     justify-content: center;
   }
+
+  .skills__container {
+    grid-template-columns: repeat(1, 90%);
+   }
   
  }
  

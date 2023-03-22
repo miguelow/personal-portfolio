@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Qualifications.css";
+import {motion} from 'framer-motion'
+
 
 function Qualifications() {
   const [toggleState, setToggleState] = useState(1)
@@ -9,6 +11,9 @@ function Qualifications() {
   }
   return (
     <section className="qualifications section" id="experience">
+      <motion.div className="qualifications__wrapper"
+        whileHover={{ y: -10 }}
+      >
       <h2 className="section__title">Experience</h2>
       <span className="section__subtitle"></span>
 
@@ -18,7 +23,7 @@ function Qualifications() {
             className={
               toggleState === 1
                 ? "qualification__button qualification__active button--flex"
-                : "qualification__button  button--flex"
+                : "qualification__button  button--flex pointer"
             }
             onClick={() => toggleTab(1)}
           >
@@ -30,7 +35,7 @@ function Qualifications() {
             className={
               toggleState === 2
                 ? "qualification__button qualification__active button--flex"
-                : "qualification__button button--flex"
+                : "qualification__button button--flex pointer"
             }
             onClick={() => toggleTab(2)}
           >
@@ -173,6 +178,7 @@ function Qualifications() {
           </div>
           </div>
         </div>
+        </motion.div>
     </section>
     
     
