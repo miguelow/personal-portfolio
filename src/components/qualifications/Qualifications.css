@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
 }
-
+/*
 .qualifications__wrapper {
     background-color: hsla(172, 45%, 75%, 1);
     border-radius: 24px;
@@ -26,7 +26,7 @@
     transform: translateY(5px);
     transition: all 1.5s ease;
    }
-
+*/
 .qualification__tabs{
     display: flex;
     justify-content: center;

@@ -12,7 +12,7 @@ function Qualifications() {
   return (
     <section className="qualifications section" id="experience">
       <motion.div className="qualifications__wrapper"
-        whileHover={{ y: -10 }}
+        //whileHover={{ y: -10 }}
       >
       <h2 className="section__title">Experience</h2>
       <span className="section__subtitle"></span>
